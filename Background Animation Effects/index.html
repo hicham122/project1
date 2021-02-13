@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first animation js</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+         <h2>first animation js </h2>
+         <div class="banner">
+           <div class="bloks"></div>
+         </div>
+    </section>
+   <script>
+    
+    const banner = document.getElementsByClassName('banner')[0];
+    const bloks = document.getElementsByClassName('bloks');
+    for(var i=1 ; i <400 ;i++){
+        banner.innerHTML +=  "<div class='bloks'></div>";
+        bloks[i].style.animationDelay =  `${i * 0.05}s`;
+    }
+
+
+
+
+
+
+
+
+
+
+   </script>
+</body>
+</html>
